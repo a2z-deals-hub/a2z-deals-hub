@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | A2Z Deals Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact A2Z Deals Hub — questions, suggestions, or partnership inquiries." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="favicon.svg" alt="" class="brand-mark" /><span class="brand-name">A2Z Deals Hub</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+      <nav class="nav" id="mainNav" aria-label="Main Navigation">
+        <a href="index.html">Home</a><a href="about.html">About</a><a class="active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Have a question or a suggestion? We’d love to hear from you.</p>
+    </div>
+  </section>
+
+  <main class="container content">
+    <!-- Mailto fallback (works on GitHub Pages) -->
+    <form class="card form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+      <label class="label">Your Name<input class="input" type="text" name="name" required /></label>
+      <label class="label">Your Email<input class="input" type="email" name="email" required /></label>
+      <label class="label">Message<textarea class="input" name="message" rows="5" required></textarea></label>
+      <button class="btn primary" type="submit">Send Message</button>
+    </form>
+
+    <p class="muted">Note: This form uses <code>mailto:</code> which opens your default email app. For serverless form handling, you can later connect a service like Formspree or Netlify Forms.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container legal">© <span id="year"></span> A2Z Deals Hub</div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
