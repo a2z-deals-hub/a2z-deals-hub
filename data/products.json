@@ -10,8 +10,8 @@
     "rating": 4.5,
     "featured": 10,
     "tag": "Top Pick",
-    "image": "https://images.unsplash.com/photo-1518441902110-6f50d4e9d1b0?q=80&w=1200&auto=format&fit=crop",
-    "link": "YOUR-AMAZON-AFFILIATE-LINK"
+    "image": "https://m.media-amazon.com/images/I/61pYgcs1f4L._AC_UL320_.jpg?q=80&w=1200&auto=format&fit=crop",
+    "link": "contact.html"
   },
   {
     "id": 2,
@@ -24,8 +24,8 @@
     "rating": 4.3,
     "featured": 9,
     "tag": "Bestseller",
-    "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?q=80&w=1200&auto=format&fit=crop",
-    "link": "YOUR-AMAZON-AFFILIATE-LINK"
+    "image": "https://m.media-amazon.com/images/I/717wjvwvexL._AC_UL320_.jpg?q=80&w=1200&auto=format&fit=crop",
+    "link": "contact.html"
   },
   {
     "id": 3,
@@ -38,8 +38,8 @@
     "rating": 4.2,
     "featured": 8,
     "tag": "Value",
-    "image": "https://images.unsplash.com/photo-1490376840453-5f616fbebe5b?q=80&w=1200&auto=format&fit=crop",
-    "link": "YOUR-AMAZON-AFFILIATE-LINK"
+    "image": "https://m.media-amazon.com/images/I/71HdLDJEEUL._AC_UL320_.jpg?q=80&w=1200&auto=format&fit=crop",
+    "link": "contact.html"
   },
   {
     "id": 4,
@@ -53,7 +53,7 @@
     "featured": 7,
     "dealOfDay": true,
     "tag": "Limited",
-    "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=1200&auto=format&fit=crop",
-    "link": "YOUR-AMAZON-AFFILIATE-LINK"
+    "image": "https://m.media-amazon.com/images/I/71tsTZoDenL._AC_UL320_.jpg?q=80&w=1200&auto=format&fit=crop",
+    "link": "contact.html"
   }
 ]
