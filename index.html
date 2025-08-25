@@ -1,55 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A2Z Deals Hub Blog | Curated Insights & Guides</title>
-  <meta name="description" content="Read the latest guides, tips, and insights on shopping, deals, and more at A2Z Deals Hub. Stay updated and save smarter.">
-  
-  <!-- SEO & AEO -->
+  <meta charset="utf-8">
+  <title>A2Z Deals Hub Blog | Smart Shopping Guides & Saving Tips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A2Z Deals Hub Blog shares practical buying guides, saving tips, and curated deal insights. Fast, mobile-friendly, and updated regularly.">
   <link rel="canonical" href="https://a2z-deals-hub.github.io/">
-  <meta property="og:title" content="A2Z Deals Hub Blog">
-  <meta property="og:description" content="Latest guides and curated shopping insights.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://a2z-deals-hub.github.io/">
-  <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta property="og:title" content="A2Z Deals Hub Blog">
+  <meta property="og:description" content="Smart guides and saving tips for savvy shoppers.">
+  <meta property="og:image" content="https://a2z-deals-hub.github.io/favicon.svg">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Styles -->
+  <!-- JSON-LD: WebSite + Organization -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"A2Z Deals Hub Blog",
+    "url":"https://a2z-deals-hub.github.io/",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://a2z-deals-hub.github.io/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    },
+    "publisher": {
+      "@type":"Organization",
+      "name":"A2Z Deals Hub",
+      "url":"https://a2z-deals-hub.github.io/",
+      "logo":{"@type":"ImageObject","url":"https://a2z-deals-hub.github.io/favicon.svg"}
+    }
+  }
+  </script>
+
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <a href="index.html" class="logo">A2Z Blog</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="favicon.svg" alt="" class="brand-mark" width="28" height="28">
+        <span class="brand-name">A2Z Deals Hub</span>
+      </a>
+
+      <nav class="nav" id="mainNav" aria-label="Main Navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <button id="themeToggle" class="btn ghost" aria-label="Toggle dark mode">🌓</button>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="mainNav" aria-expanded="false">☰</button>
+    </div>
   </header>
 
-  <main class="container">
-    <h1>Latest Blog Posts</h1>
-    <section class="blog-list">
-      <article class="blog-card">
-        <img src="assets/images/sample1.jpg" alt="Post 1">
-        <h2><a href="blog/sample-post-1.html">Best Shopping Hacks for 2025</a></h2>
-        <p>Discover how to save big with these shopping tips...</p>
-      </article>
-      <article class="blog-card">
-        <img src="assets/images/sample2.jpg" alt="Post 2">
-        <h2><a href="blog/sample-post-2.html">Top 10 Tech Deals This Month</a></h2>
-        <p>We’ve curated the hottest deals you can’t miss...</p>
-      </article>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <h1>Your Guide to Smarter Shopping</h1>
+        <p>Curated insights, practical buying tips, and evergreen guides to help you save time and money.</p>
+        <form class="search" role="search" onsubmit="return false" aria-label="Search blog posts">
+          <input id="searchInput" type="search" placeholder="Search posts (e.g., headphones, kitchen)" aria-label="Search posts">
+        </form>
+      </div>
+      <div class="hero-art" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- LATEST POSTS -->
+  <main id="main" class="container">
+    <section aria-labelledby="latestHeading">
+      <div class="section-head">
+        <h2 id="latestHeading">Latest Posts</h2>
+        <div class="controls">
+          <select id="sortSelect" aria-label="Sort posts">
+            <option value="date-desc">Newest first</option>
+            <option value="date-asc">Oldest first</option>
+            <option value="title-asc">Title A–Z</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="postGrid" class="grid"></div>
+      <div id="emptyState" class="empty" hidden>No posts found. Try different keywords.</div>
+    </section>
+
+    <!-- FAQ (AEO) -->
+    <section class="faq" aria-labelledby="faqHeading">
+      <h2 id="faqHeading">Frequently Asked Questions</h2>
+      <details>
+        <summary>What is A2Z Deals Hub Blog?</summary>
+        <p>A content-first blog sharing shopping guides and saving tips. We do not host Amazon logos or product images. Posts may contain affiliate links with full disclosure.</p>
+      </details>
+      <details>
+        <summary>Do you post sponsored content?</summary>
+        <p>We may include affiliate links. Opinions remain our own. We aim for transparent, helpful recommendations.</p>
+      </details>
+      <details>
+        <summary>How often are posts updated?</summary>
+        <p>New or refreshed articles are added regularly. Check the post date for recency.</p>
+      </details>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 A2Z Deals Hub Blog. All Rights Reserved.</p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>A2Z Deals Hub</h3>
+        <p>Smart shopping insights & evergreen guides.</p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <ul class="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Disclosure</h3>
+        <p>Some posts may include affiliate links. We do not use Amazon trademarks or product images on this site.</p>
+      </div>
+    </div>
+    <div class="container legal">© <span id="year"></span> A2Z Deals Hub</div>
   </footer>
-  
+
+  <!-- FAQPage Schema (AEO) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"What is A2Z Deals Hub Blog?","acceptedAnswer":{"@type":"Answer","text":"A content-first blog sharing shopping guides and saving tips. We do not host Amazon logos or product images. Posts may contain affiliate links with full disclosure."}},
+      {"@type":"Question","name":"Do you post sponsored content?","acceptedAnswer":{"@type":"Answer","text":"We may include affiliate links. Opinions remain our own. We aim for transparent, helpful recommendations."}},
+      {"@type":"Question","name":"How often are posts updated?","acceptedAnswer":{"@type":"Answer","text":"New or refreshed articles are added regularly. Check the post date for recency."}}
+    ]
+  }
+  </script>
+
   <script src="assets/js/app.js"></script>
 </body>
 </html>
