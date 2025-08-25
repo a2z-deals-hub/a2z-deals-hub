@@ -1,41 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Contact | A2Z Deals Hub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Contact A2Z Deals Hub — questions, suggestions, or partnership inquiries." />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <meta charset="utf-8">
+  <title>Contact | A2Z Deals Hub Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact A2Z Deals Hub Blog with tips, feedback, or collaboration ideas.">
+  <link rel="canonical" href="https://a2z-deals-hub.github.io/contact.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Contact A2Z Deals Hub">
+  <meta property="og:description" content="Send us your feedback or collaboration requests.">
+  <meta property="og:url" content="https://a2z-deals-hub.github.io/contact.html">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ContactPage",
+    "name":"Contact A2Z Deals Hub Blog",
+    "url":"https://a2z-deals-hub.github.io/contact.html"
+  }
+  </script>
+
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html"><img src="favicon.svg" alt="" class="brand-mark" /><span class="brand-name">A2Z Deals Hub</span></a>
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">☰</button>
-      <nav class="nav" id="mainNav" aria-label="Main Navigation">
+      <a class="brand" href="index.html"><img src="favicon.svg" alt="" class="brand-mark"><span class="brand-name">A2Z Deals Hub</span></a>
+      <nav class="nav" id="mainNav">
         <a href="index.html">Home</a><a href="about.html">About</a><a class="active" href="contact.html">Contact</a>
+        <button id="themeToggle" class="btn ghost" aria-label="Toggle dark mode">🌓</button>
       </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-controls="mainNav" aria-expanded="false">☰</button>
     </div>
   </header>
 
-  <section class="page-hero">
-    <div class="container">
-      <h1>Contact Us</h1>
-      <p>Have a question or a suggestion? We’d love to hear from you.</p>
-    </div>
-  </section>
+  <main id="main" class="container content">
+    <h1>Contact Us</h1>
+    <p>Questions, suggestions, or collaboration ideas? We’d love to hear from you.</p>
 
-  <main class="container content">
-    <!-- Mailto fallback (works on GitHub Pages) -->
     <form class="card form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
-      <label class="label">Your Name<input class="input" type="text" name="name" required /></label>
-      <label class="label">Your Email<input class="input" type="email" name="email" required /></label>
-      <label class="label">Message<textarea class="input" name="message" rows="5" required></textarea></label>
-      <button class="btn primary" type="submit">Send Message</button>
+      <label class="label">Your Name
+        <input class="input" type="text" name="name" required>
+      </label>
+      <label class="label">Your Email
+        <input class="input" type="email" name="email" required>
+      </label>
+      <label class="label">Message
+        <textarea class="input" name="message" rows="6" required></textarea>
+      </label>
+      <button class="btn primary" type="submit">Send</button>
     </form>
 
-    <p class="muted">Note: This form uses <code>mailto:</code> which opens your default email app. For serverless form handling, you can later connect a service like Formspree or Netlify Forms.</p>
+    <p class="muted">Note: This form opens your default email app (mailto). For serverless forms, connect Formspree or similar later.</p>
   </main>
 
   <footer class="site-footer">
