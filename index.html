@@ -1,150 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>A2Z Deals Hub | Best Amazon Deals & Discounts</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="A2Z Deals Hub curates top Amazon deals across Electronics, Fashion, Home & more. Updated daily. Save time and money with verified recommendations." />
-  <meta name="keywords" content="Amazon deals, discounts, best offers, electronics deals, fashion deals, home deals, A2Z Deals Hub" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <meta property="og:title" content="A2Z Deals Hub" />
-  <meta property="og:description" content="Curated Amazon deals & discounts updated daily." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://YOUR-USERNAME.github.io/" />
-  <meta property="og:image" content="https://YOUR-USERNAME.github.io/favicon.svg" />
-
-  <!-- Schema: Organization + WebSite -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"WebSite",
-    "name":"A2Z Deals Hub",
-    "url":"https://YOUR-USERNAME.github.io/",
-    "potentialAction":{
-      "@type":"SearchAction",
-      "target":"https://YOUR-USERNAME.github.io/?q={search_term_string}",
-      "query-input":"required name=search_term_string"
-    }
-  }
-  </script>
-
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A2Z Deals Hub - Blog</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <!-- Top notice / affiliate disclosure -->
-  <div class="notice" id="affiliateNotice" role="region" aria-label="Affiliate Disclosure">
-    <p>
-      <strong>Affiliate Disclosure:</strong> We may earn a commission from qualifying purchases made via links on this site.
-    </p>
-    <button class="btn ghost" id="dismissNotice" aria-label="Dismiss disclosure">OK</button>
-  </div>
-
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="A2Z Deals Hub Home">
-        <img src="favicon.svg" alt="" class="brand-mark" />
-        <span class="brand-name">A2Z Deals Hub</span>
-      </a>
-
-      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
-        ☰
-      </button>
-
-      <nav class="nav" id="mainNav" aria-label="Main Navigation">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+  <header>
+    <h1>A2Z Deals Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <h1>Discover the Best Amazon Deals</h1>
-        <p>Curated picks in Electronics, Fashion, Home & more — updated daily to save you time and money.</p>
-        <a href="#shop" class="btn primary">Browse Deals</a>
-      </div>
-      <div class="hero-art" aria-hidden="true"></div>
-    </div>
-  </section>
-
-  <!-- Controls -->
-  <section class="controls" id="shop">
-    <div class="container controls-grid">
-      <input type="search" id="searchInput" class="input" placeholder="Search products..." aria-label="Search products" />
-      <select id="categorySelect" class="input" aria-label="Filter by category">
-        <option value="all">All Categories</option>
-        <option value="electronics">Electronics</option>
-        <option value="fashion">Fashion</option>
-        <option value="home">Home & Kitchen</option>
-        <option value="gadgets">Gadgets</option>
-      </select>
-      <select id="sortSelect" class="input" aria-label="Sort products">
-        <option value="featured">Sort: Featured</option>
-        <option value="price-asc">Price: Low to High</option>
-        <option value="price-desc">Price: High to Low</option>
-        <option value="rating-desc">Rating: High to Low</option>
-      </select>
-    </div>
-  </section>
-
-  <!-- Deal of the Day -->
-  <section class="deal-of-day">
-    <div class="container dod-card" id="dealOfDay" aria-live="polite">
-      <!-- Populated by JS -->
-    </div>
-  </section>
-
-  <!-- Grid -->
-  <main class="container">
-    <div id="productGrid" class="grid" aria-live="polite">
-      <!-- Populated by JS -->
-    </div>
-    <div id="emptyState" class="empty" hidden>No products found. Try adjusting your search or filters.</div>
+  <main>
+    <section class="blog-list" id="blog-list">
+      <!-- Blog posts will load here -->
+    </section>
   </main>
 
-  <!-- Benefits -->
-  <section class="benefits">
-    <div class="container benefits-grid">
-      <div class="benefit">
-        <h3>Verified Amazon Picks</h3>
-        <p>We highlight highly-rated products with strong value.</p>
-      </div>
-      <div class="benefit">
-        <h3>Updated Daily</h3>
-        <p>Fresh deals and seasonal offers to maximize savings.</p>
-      </div>
-      <div class="benefit">
-        <h3>Simple & Fast</h3>
-        <p>Find what you need quickly with filters and search.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <h4>A2Z Deals Hub</h4>
-        <p>Curated Amazon deals to save you time & money.</p>
-      </div>
-      <div>
-        <h4>Links</h4>
-        <ul class="list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Disclosure</h4>
-        <p>As an Amazon Associate we earn from qualifying purchases.</p>
-      </div>
-    </div>
-    <div class="container legal">© <span id="year"></span> A2Z Deals Hub</div>
+  <footer>
+    <p>© 2025 A2Z Deals Hub | Curated Deals Blog</p>
   </footer>
 
   <script src="assets/js/app.js"></script>
