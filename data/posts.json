@@ -1,14 +1,20 @@
 [
   {
-    "title": "Top 5 Kitchen Gadgets Under AED 100",
-    "date": "2025-08-25",
-    "excerpt": "Budget-friendly gadgets to make cooking fun and easy.",
-    "url": "blog/blog1.html"
+    "title": "How to Choose Budget Headphones (Without Regrets)",
+    "date": "2025-08-20",
+    "excerpt": "A practical 5-step method to pick headphones that fit your lifestyle, without overpaying.",
+    "url": "blog/sample-post-1.html",
+    "image": "https://images.unsplash.com/photo-1518441902110-6f50d4e9d1b0?q=80&w=1200&auto=format&fit=crop",
+    "readTime": 6,
+    "tags": ["audio", "headphones", "guide"]
   },
   {
-    "title": "Best Budget Headphones in UAE",
+    "title": "10 Quick Shopping Hacks to Save Money This Month",
     "date": "2025-08-22",
-    "excerpt": "Crisp sound without spending a fortune.",
-    "url": "blog/blog2.html"
+    "excerpt": "Ten easy, practical ways to save money on everyday purchases—works online and in-store.",
+    "url": "blog/sample-post-2.html",
+    "image": "https://images.unsplash.com/photo-1542834369-f10ebf06d3cb?q=80&w=1200&auto=format&fit=crop",
+    "readTime": 5,
+    "tags": ["saving", "tips", "shopping"]
   }
 ]
